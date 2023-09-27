@@ -76,7 +76,11 @@ class GameFragment : Fragment() {
     */
 
     private fun onSubmitWord() {
-
+        if (viewModel.nextWord()) {
+            updateNextWordOnScreen()
+        } else {
+            showFinalScoreDialog()
+        }
     }
 
     /*
