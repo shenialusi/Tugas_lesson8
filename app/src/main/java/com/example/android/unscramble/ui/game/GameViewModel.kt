@@ -30,6 +30,9 @@ class GameViewModel : ViewModel() {
             wordsList.add(currentWord)
         }
     }
+    private fun increaseScore() {
+        _score += SCORE_INCREASE
+    }
 
     init {
         Log.d("GameFragment", "GameViewModel created!")
