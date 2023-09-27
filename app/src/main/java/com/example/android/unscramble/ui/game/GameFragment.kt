@@ -76,6 +76,7 @@ class GameFragment : Fragment() {
     */
 
     private fun onSubmitWord() {
+        val playerWord = binding.textInputEditText.text.toString()
         if (viewModel.nextWord()) {
             updateNextWordOnScreen()
         } else {
