@@ -70,10 +70,6 @@ class GameViewModel : ViewModel() {
             getNextWord()
         }
 
-        override fun onCleared() {
-            super.onCleared()
-            Log.d("GameFragment", "GameViewModel destroyed!")
-        }
 
         fun reinitializeData() {
             _score.value = 0
